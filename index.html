@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Example Good Practices</title>
+</head>
+
+<body class="whitesmoke">
+    <div id="container-grid">
+        <div class="item-grid white">
+            <!-- Example the inline javascript -->
+            <button class="btn-grid whitesmoke" id="btn-inline" onclick="alert('Hello World!')" >Button 1</button>
+        </div>
+        <div class="item-grid white">
+            <button class="btn-grid whitesmoke" id="btn-internal">Button 2</button>
+        </div>
+        <div class="item-grid white">
+            <button class="btn-grid whitesmoke" id="btn-external">Button 3</button>
+        </div>
+    </div>
+
+
+    <script type="text/javascript">
+
+        // Example the internal Javascript
+        document.body.querySelector("#btn-internal").addEventListener("click", function () {
+            alert("Hello World!");
+        });
+
+        // I used anonymous functions because they are compact and fast to illustrate. However, named functions bring several improvements in readability, reusability and debugging of the code.
+
+    </script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
