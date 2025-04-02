@@ -15,16 +15,20 @@ document.getElementById("btn-external").addEventListener("click", btnExternalCli
 function btnMouseOver(){
     // background-color
 
-    // Another alternative would be to use add and remove classList. I found the code below to be more readable.
     if (this.classList.contains("whitesmoke")) {
+        // in order to exemplify the manipulation of style with class in js, I used add, remove and replace.
         this.classList.replace("whitesmoke", "blue");
+        this.classList.add("white-color");
     }
+
+
 }
 
 function btnMouseOut(){
     // background-color
     if (this.classList.contains("blue")) {
         this.classList.replace("blue", "whitesmoke");
+        this.classList.remove("white-color");
     }
 }
 
